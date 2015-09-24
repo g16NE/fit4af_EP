@@ -1,15 +1,19 @@
 class Player
+
+	attr_accessor :name
+	attr_reader :health
+
 	def initialize(pname, phealth=100)
 		@name = pname.capitalize
 		@health = phealth
 	end
 
-def say_hello
-	"Ich bin #{@name} mit einem Wert von #{@health}"
+	def score
+	@health + @name.length
 end
 
 def to_s
-		say_hello
+		"Der Spieler #{@name} hat #{@health} und einen Sore von #{sore}"
 end
 
 	def blam
@@ -27,11 +31,10 @@ end
 	puts Player1
 
 	player2 = Player.new("Karl")
-	puts Player1.say_hello
-	
-	Player1.blam
-	puts Player1
 
-	Player1.w00t
-	puts Player1
+
+	
+
+
+
 
