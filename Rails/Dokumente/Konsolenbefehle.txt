@@ -7,3 +7,8 @@ Starten eines Servers
 	rails s
 
 	STRG+c beendet den Server
+
+Starten einer RailsConsole:
+	rails c
+
+	exit in der Konsole schließt diese
